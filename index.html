@@ -1,0 +1,561 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>App Review Club</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+<!-- Custom Theme files -->
+
+<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<script src="js/jquery-1.12.0.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+
+$(document).ready(function () {
+
+    size_li = $("#myList li").size();
+
+    x=1;
+
+    $('#myList li:lt('+x+')').show();
+
+    $('#loadMore').click(function () {
+
+        x= (x+3 <= size_li) ? x+3 : size_li;
+
+        $('#myList li:lt('+x+')').show();
+
+    });
+
+    $('#showLess').click(function () {
+
+        x=(x-3<0) ? 3 : x-1;
+
+        $('#myList li').not(':lt('+x+')').hide();
+
+    });
+
+});
+
+ $(window).scroll(function() {
+             var height = $(window).scrollTop();
+
+             if(height  > 42) {
+                 $('.logo').css('margin-top', '13px');
+             }
+			 else {
+
+				  $('.logo').css('margin-top', '0px');
+				 }
+
+         });
+</script>
+
+<script type="text/javascript" src="js/move-top.js"></script>
+
+       <script type="text/javascript" src="js/easing.js"></script>
+
+		<script type="text/javascript">
+
+			jQuery(document).ready(function($) {
+
+				$(".scroll").click(function(event){
+
+					event.preventDefault();
+
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+
+				});
+
+			});
+
+		</script>
+
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+
+				/*
+
+				var defaults = {
+
+				containerID: 'toTop', // fading element id
+
+				containerHoverID: 'toTopHover', // fading element hover id
+
+				scrollSpeed: 1200,
+
+				easingType: 'linear'
+
+				};
+
+				*/
+
+		$().UItoTop({ easingType: 'easeOutQuart' });
+
+});
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<!-- banner -->
+
+<div class="banner">
+
+
+
+	<div class="menu-top">
+
+    	<div class="container">
+
+            <div class="header">
+
+                <a href="#" >
+
+                    <div class="logo">
+
+                        <h1></h1>
+
+                    </div>
+
+                </a>
+
+                <div class="navigation">
+
+                    <nav class="navbar navbar-default">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+
+                        <div class="navbar-header">
+
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                                <span class="sr-only">Toggle navigation</span>
+
+                                <span class="icon-bar"></span>
+
+                                <span class="icon-bar"></span>
+
+                                <span class="icon-bar"></span>
+
+                            </button>
+
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+
+                            <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+
+                                <ul class="nav navbar-nav">
+
+                                    <li class="hvr-bounce-to-bottom button"><a href="#home" class="scroll">Home</a></li>
+
+                                    <li class="hvr-bounce-to-bottom button"><a href="#about" class="scroll">Who Can use it</a></li>
+
+                                    <li class="hvr-bounce-to-bottom button"><a href="#services" class="scroll">How It Works</a></li>
+
+                                    <li class="hvr-bounce-to-bottom button"><a href="#footer-section" class="scroll">Get in Touch</a></li>
+
+                                    <li class="hvr-bounce-to-bottom button visible-xs-block"><a href="terms.html" class="scroll">Privacy</a></li>
+
+                                    <li class="hvr-bounce-to-bottom button visible-xs-block"><a href="terms.html" class="scroll">Terms</a></li>
+
+                                </ul>
+
+                                    <div class="clearfix"></div>
+
+                            </div><!-- /.navbar-collapse -->
+
+                    </nav>
+
+                </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+
+
+    </div>
+
+
+
+    </div>
+
+	<div class="container banner-new" id="home">
+
+		<div class="banner-info">
+
+
+
+			<div class="col-md-12 pull-left">
+
+            	<div class="col-md-6 col-xs-12 col-sm-6 banner-text">
+
+                	<h1><span>Earn</span> up to &pound;20.00 A MONTH by <span>downloading</span> and <span>reviewing</span> your favourite Apps </h1>
+
+                    <a href="#"><img class="btn-blue" src="images/btn-blue_03.png"></a>
+
+                    <p>The Services are provided in the United Kingdom for the sole use of UK residents. The Services are provided to you by Airtime Rewards. This is a subscription service that will cost Â£1.50 per week until you send STOP to 64055 or email to help@arc.co.uk to unsubscribe at any time. For full details please click on our Full Terms & Conditions</p>
+
+
+
+                </div>
+
+				<div class="col-md-6 col-xs-4 col-sm-6 text-center hidden-xs">
+
+
+
+                <img class="mobile-img hidden-xs" src="images/mobile_06.png">
+
+
+
+
+
+                </div>
+
+			</div>
+
+			<div class="clearfix"></div>
+
+		</div>
+
+
+
+	</div>
+
+</div>
+
+<!-- /banner -->
+
+
+
+<!-- about -->
+
+<div class="about" id="about">
+
+	<div class="container">
+
+		<div class="col-md-offset-1 col-md-10 col-md-offset-2 aboutus-sect">
+
+        		<div class="img-sec">
+
+                <img src="images/icon-man_04.png" >
+
+        		</div>
+
+
+
+                <div>
+
+
+
+                <hr style="color:#000;">
+
+
+
+                </div>
+
+                <div class="text-sec">
+
+               <h1><span>START EARNING ON</span> PAY AS YOU GO <span>or on </span>PAY MONTHLY <span>CONTRACTS AVAILABLE ON ALL</span> NETWORKS</h1>
+
+                <p>We're compatible with all major UK networks, simply pair your phone number on registration and select your tariff type.</p>
+
+                </div>
+
+
+
+        </div>
+
+	</div>
+
+</div>
+
+<!-- /about -->
+
+<!-- services -->
+
+<div class="services" id="services">
+
+	<div class="container">
+
+    	<div class="col-md-6 col-sm-6 col-xs-12">
+
+    	    <div class="img-sec">
+
+               <img class="mobile-img" src="images/mobile-2.png">
+
+        	</div>
+
+         </div>
+
+		 <div class="col-md-6 col-sm-6 col-xs-12">
+
+         		<div class="heaidng-sec">
+
+                	<img class="pull-left" src="images/arrow_download.png">
+
+                    <h2 class="pull-left">Download</h2>
+
+                    <div class="clearfix"></div>
+
+                    <p>Simply install some of the latest and greatest apps from your store
+
+					to your handset. We'll keep things fresh by featuring new apps
+
+					each week.</p>
+
+                    <p class="review-sec">Some of the apps to review</p>
+
+
+
+                    <div class="img-review">
+
+                    	<img class="pull-left" src="images/g1_11.png">
+
+                        <img class="pull-left" src="images/g2_11.png">
+
+                        <img class="pull-left" src="images/g3_11.png">
+
+                        <img class="pull-left" src="images/g4_11.png">
+
+                    </div>
+
+                </div>
+
+         </div>
+
+	</div>
+
+
+
+</div>
+
+<!-- /services -->
+
+<!-- features -->
+
+<div class="features" id="features">
+
+	<div class="container" >
+
+		<div class="col-md-12 col-sm-12 col-xs-12 hidden-xs">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 mobile-feat">
+
+                   <div class="heaidng-sec">
+
+                	<img class="pull-left" src="images/star_icon_15.png">
+
+                    <h2 class="pull-left">REVIEW</h2>
+
+                    <div class="clearfix"></div>
+
+                    <p>You're opinion is important. We want to know what you thought of each app. Leave a quick star rating for each download, it'll only take
+
+a minute.</p>
+
+
+
+
+
+                    <div class="img-review">
+
+                    	<img class="pull-left" src="images/ARC_web_ui_Home_15.png">
+
+                    </div>
+
+                </div>
+
+             </div>
+
+		 <div class="col-md-6 col-sm-6 col-xs-12 mobile-feat2">
+
+            <div class="img-sec">
+
+               <img class="mobile-img" src="images/mobile-3.png">
+
+        	</div>
+
+         </div>
+
+
+
+	</div>
+
+
+
+   <div class="col-md-12 col-sm-12 col-xs-12 visible-xs-block">
+
+		 <div class="col-md-6 col-sm-6 col-xs-12 mobile-feat2">
+
+            <div class="img-sec">
+
+               <img class="mobile-img" src="images/mobile-3.png">
+
+        	</div>
+
+         </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 mobile-feat">
+
+                   <div class="heaidng-sec">
+
+                	<img class="pull-left" src="images/star_icon_15.png">
+
+                    <h2 class="pull-left">REVIEW</h2>
+
+                    <div class="clearfix"></div>
+
+                    <p>You're opinion is important. We want to know what you thought of each app. Leave a quick star rating for each download, it'll only take
+
+a minute.</p>
+
+                </div>
+
+             </div>
+
+	</div>
+
+</div>
+
+</div>
+
+<!-- /features -->
+
+
+
+<div class="last-sec" id="last-sec">
+
+	<div class="container">
+
+		<div class="col-md-12 col-sm-12 col-xs-12 ">
+
+    	<div class="col-md-6 col-sm-6 col-xs-12">
+
+			<div class="img-sec ">
+
+               <img class="mobile-img" src="images/mobile-4.png">
+
+        	</div>
+
+         </div>
+
+		 <div class="col-md-6 col-sm-6 col-xs-12">
+
+			<div class="heaidng-sec">
+
+                	<img class="pull-left" src="images/earn_img_15.png">
+
+                    <h2 class="pull-left">Earn</h2>
+
+                    <div class="clearfix"></div>
+
+                    <p>We value your opinion, that's why we reward you for it. Each time you leave a review you'll earn rewards. Cash out your rewards against your phone account</p>
+
+
+
+                    <div class="img-review">
+
+						<img src="images/mobile-img_15.png">
+
+                    </div>
+
+                </div>
+
+         </div>
+
+
+
+	</div>
+
+</div>
+
+</div>
+
+<div class="footer" style="height:250px;" id="footer-section">
+
+	<div class="container">
+
+
+
+			<div class="col-md-6 col-sm-6 col-xs-12">
+
+            	<div class="footer-logo hidden-xs">
+
+                	<img src="images/logo-footer.png">
+
+                </div>
+
+                <div class="footer-terms hidden-xs">
+
+                © Airtime Rewards Ltd 2015  | <a href="#"> Terms   |   Privacy</a>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 text-right footer-mobile">
+
+            	<div class="footer-address">
+
+                	<span style="margin-right: 97px;">HELP: +92 331 3388766</span><br/>
+
+					<span>EMAIL: hello@devtrongenesis.com</span>
+
+
+
+                </div>
+
+               <div class="footer-social">
+
+              <a href="https://www.facebook.com/DevtronGenesis" target="_blank"><img src="images/fb_logo_08.png"></a>
+
+                <a href="https://twitter.com/DevtronGenesis" target="_blank"><img src="images/twitter_logo_10.png"></a>
+
+                </div>
+
+
+
+                <div class="footer-terms visible-xs-block">
+
+                © Airtime Rewards Ltd 2015  | <a href="terms.html"> Terms   |   Privacy</a>
+
+                </div>
+
+            </div>
+
+
+
+		<div class="clearfix"></div>
+
+	</div>
+
+</div>
+
+<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover" style="opacity: 0;"> </span></a>
+
+<!--- footer ---->
+
+</body>
+
+</html>
